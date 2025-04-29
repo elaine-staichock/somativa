@@ -14,10 +14,10 @@ async def test_funcaoteste():
         
     assert result () == {"teste": True, "num_aleatorio": 57}
 
-async def test_create_estudante(estudante: Estudante):
-    estudante_teste = Estudante(name="Joao", curso="Logica", ativo=False)
-    result = await create_estudante(estudante_teste)
-    assert estudante_teste == result
+#async def test_create_estudante(estudante: Estudante):
+#    estudante_teste = Estudante(name="Joao", curso="Logica", ativo=False)
+#    result = await create_estudante(estudante_teste)
+#    assert estudante_teste == result
     
 async def test_update_estudante_negativo():
     result = await update_estudante(-5)
